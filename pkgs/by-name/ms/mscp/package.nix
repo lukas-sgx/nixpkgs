@@ -9,13 +9,13 @@
 }:
 stdenv.mkDerivation (finalAttrs: {
   pname = "mscp";
-  version = "0.2.2";
+  version = "0.2.4";
 
   src = fetchFromGitHub {
     owner = "upa";
     repo = "mscp";
     tag = "v${finalAttrs.version}";
-    hash = "sha256-5lX0b3JfjmQh/HlESRMNxqCe2qFRAEZoazysoy252dY=";
+    hash = "sha256-zhLU0H2/ZMbrPHD5ULCi5eheAlzS5v/bb1E16hSSc7E=";
     fetchSubmodules = true;
   };
 
