@@ -14,14 +14,14 @@
 stdenv.mkDerivation (finalAttrs: {
 
   pname = "nano-wallet";
-  version = "28.2";
+  version = "29.0DB72";
 
   src = fetchFromGitHub {
     owner = "nanocurrency";
     repo = "nano-node";
     tag = "V${finalAttrs.version}";
     fetchSubmodules = true;
-    hash = "sha256-Wo1Gd6dOnCoPiGmuJQhZmKKSg7LrKpfdvLNNKBYTUWI=";
+    hash = "sha256-aWDw3CoQuc91OrWmHpxJ+pN7+qfAuLlUn+3lTzYy1qo=";
   };
 
   env.NIX_CFLAGS_COMPILE = "-Wno-error";
